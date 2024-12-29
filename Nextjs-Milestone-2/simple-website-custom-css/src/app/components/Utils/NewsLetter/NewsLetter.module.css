@@ -1,0 +1,130 @@
+.section{
+  width: 100%;
+  margin: 120px 0;
+  position: relative;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  max-width: 100%;
+  text-align: center;
+}
+.planeIcon{
+  width: 80px;
+  height: 80px;
+  background-color: #EBB96A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.subtitle{
+  font-size: 14px;
+  color: rgb(215, 116, 116);
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.heading{
+  font-size: 40px;
+  color: #000;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 20px 0 50px 0;
+}
+.emailInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 12px;
+}
+.inputContainer{
+  width: 300px;
+  position: relative;
+}
+.mailIcon{
+  position: absolute;
+  z-index: 22;
+  left: 12px;
+  top: 50%;
+  font-size: 20px;
+  transform: translateY(-50%);
+  color: rgb(108, 108, 108,0.3);
+}
+.input{
+  padding: 8px 12px 8px 40px;
+  font-size: 13px;
+  color: var(--main-gray);
+  font-family: var(--font-libre-franklin);
+  line-height: 23px;
+  font-weight: 500;
+  border: rgb(108, 108, 108,0.2) 1px solid;
+  width: 100%;
+  position: relative;
+}
+.input:focus{
+  border-color: rgba(255, 0, 0, 0.406) !important;
+}
+.input::placeholder{
+  color: rgb(108, 108, 108,0.3);
+}
+.button{
+  padding: 10px 35px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-family: var(--font-libre-franklin);
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.button:hover{
+  background-color: var(--main-red);
+  transition: all 0.4s;
+}
+
+.newsLetterRadioContainer{
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: var(--font-libre-franklin);
+  margin: 40px 0 28px 0;
+}
+.radiobtnLabel{
+  cursor: pointer;
+}
+.radiobtn{
+  margin-top: 1px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px){
+  .heading{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .inputContainer{
+    width: 100%;
+  }
+  .button{
+    width: 100%;
+    padding: 9px 0;
+  }
+  .emailInput{
+    flex-direction: column;
+  }
+}

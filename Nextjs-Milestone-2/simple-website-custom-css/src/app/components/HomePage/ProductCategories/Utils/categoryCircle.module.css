@@ -1,0 +1,37 @@
+.categoryCircle{
+    width: 240px;
+    height: 240px;
+    border: 30px solid rgba(0, 0, 0, .05);
+    border-radius: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+    padding-top: 20px;
+    text-decoration: none;
+    transition: box-shadow .5s;
+}
+.categoryName{
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 38px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px){
+    .categoryCircle{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 930px){
+    .categoryCircle{
+        width: 240px;
+        height: 240px;
+    }
+}

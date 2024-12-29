@@ -1,0 +1,95 @@
+.banner {
+   background-image: linear-gradient(to right, rgba(255, 255, 255, .89) 13%, rgba(255, 255, 255, 0) 57%), url("../../../images/HomeBanner/homeBanner.jpeg");
+    background-position: 0 0, 50% 33%;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    border-top: 1px solid #ebebeb;
+    padding: 120px 0;
+    font-weight: 500;
+    position: relative;
+    margin-left: -10px;
+}
+
+.content {
+  z-index: 1;
+    width: 1200px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    position: relative;
+}
+.textContainer{
+  width: 50%;
+}
+.companyName{
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 24px;
+  color: #d77474;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.heading{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+  margin-bottom: 10px;
+}
+
+.description {
+  width: 80%;
+  font-family: var(--font-libre-franklin);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--main-gray);
+}
+
+.highlight {
+  color: #b0413e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.btnContainer{
+  margin-top: 30px;
+}
+.button {
+  background-color: #b0413e;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #902f2c;
+}
+@media screen and (max-width:1200px){
+  .content{
+    width: 100%;
+  }
+}
+@media screen and (max-width:1024px){
+  .textContainer{
+    width: 65%;
+  }
+}
+@media screen and (max-width:768px){
+  .textContainer{
+    width: 80%;
+  }
+}
+@media screen and (max-width:664px){
+  .textContainer{
+    width: 90%;
+  }
+}

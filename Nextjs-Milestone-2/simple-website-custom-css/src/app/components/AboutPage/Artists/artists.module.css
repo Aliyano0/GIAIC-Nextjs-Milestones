@@ -1,0 +1,30 @@
+.section{
+  width: 100%;
+  padding: 120px 0;
+  position: relative;
+   border-top: 1px solid #ebebeb;
+}
+.container{ 
+  width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.artistCards{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px){
+  .container{
+    width:100%;
+  }
+}
+@media screen and (max-width: 768px){
+  .artistCards{
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,116 @@
+.section{
+  width: 100%;
+  padding-top: 220px;
+  position: relative;
+  border-top: 1px solid #ebebeb;
+}
+.container{
+  width: 1200px;
+  margin: auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.row{
+  width: 100%;
+  padding-bottom: 220px;
+  display: flex;
+  justify-content: space-between;
+}
+.images{
+  position: relative;
+  height: 420px;
+  width: 586px;
+  padding: 0 10px;
+}
+.orangeCeramic{
+  width: 300px;
+  height:357px; 
+  position: absolute;
+  top: -70px;
+  right: 230px;
+  z-index: 1;
+  object-fit:cover;
+}
+.goldBlackPot{
+  width: 240px;
+  height: 488px;
+  position: absolute;
+  top: -110px;
+  right: 160px;
+  z-index: 2;
+}
+.text{
+  width: 50%;
+  text-align: left;
+}
+.heading{
+  margin: 20px 0;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+.para{
+  width: 70%;
+  margin-bottom: 30px;
+  font-family: var(--font-libre-franklin);
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-gray);
+}
+@media screen and (max-width: 1200px){
+  .container{
+    width:100%;
+  }
+  .images{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px){
+  .images{
+    width: 390px;
+  }
+  .orangeCeramic{
+  width: 300px;
+  height:357px; 
+  top: -70px;
+  right: 28%;
+}
+.goldBlackPot{
+  width: 240px;
+  height: 488px;
+  top: -110px;
+  left: 30%;
+}
+  .text{
+    width: 100%;
+  }
+  .para{
+    width:80%;
+  }
+  .row{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 390px){
+  .images{
+    width: 320px;
+    overflow: hidden;
+    height: 490px;
+  }
+  .orangeCeramic{
+    top: 50px;
+    right: 15%;
+}
+  .goldBlackPot{
+    top: 0;
+    left: 35%;
+}
+.row{
+  gap: 20px;
+}
+  .para{
+    width:90%;
+  }
+}

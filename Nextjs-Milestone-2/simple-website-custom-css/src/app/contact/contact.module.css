@@ -1,0 +1,90 @@
+.section{
+  width: 100%;
+  margin: 120px 0 0 0;
+  position: relative;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.textContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 150px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+.text{
+  width:30%;
+  text-align: center;
+}
+.heading{
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 23px;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.para{
+  font-family: var(--font-libre-franklin);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--main-gray);
+}
+.bannerImage{
+    width: auto;
+    height: 200px;
+    background-image: url("../images/Contact/contactFormBanner.jpeg");
+    background-position: 0 51%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+}
+
+@media screen and (max-width:1200px){
+  .container{
+    width: 100%;
+  }
+ 
+
+}
+@media screen and (max-width: 1024px){
+  .text{
+    width: 25%;
+ }
+ .textContainer{
+  padding: 0;
+ }
+}
+@media screen and (max-width: 768px){
+  .textContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .text{
+    width: 35%;
+ }
+}
+@media screen and (max-width: 431px){
+  .container{
+    padding: 8px;
+  }
+  .textContainer{  
+    gap: 20px;
+  }
+  .text{
+    width: 80%;
+ }
+ .para{
+  font-size: 12px;
+ }
+}
