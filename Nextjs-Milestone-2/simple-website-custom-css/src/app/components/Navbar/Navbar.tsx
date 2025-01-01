@@ -4,6 +4,7 @@ import styles from "./navbar.module.css";
 import { usePathname } from "next/navigation";
 import { PiShoppingCart } from "react-icons/pi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const navLinksData = [
   {
@@ -30,6 +31,10 @@ const navLinksData = [
 
 const Navbar = () => {
   const pathName = usePathname();
+  const [showNav, setShowNav] = useState(false);
+  const handleClick = () => {
+    setShowNav(!showNav);
+  }
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
@@ -51,8 +56,25 @@ const Navbar = () => {
           <PiShoppingCart className={styles.cartIcon}/>
           Cart
         </div>
-        <div className={styles.hamburger}>
+        <div onClick={handleClick} className={styles.hamburger}>
           <GiHamburgerMenu />
+        </div>
+        <div className={`${showNav ? styles.showNav : styles.hideNav} ${styles.mobileNav}`}>
+            <div className={styles.mobileNavHeader}>
+            <div className={styles.closeBtnContainer}>
+            <div onClick={handleClick} className={styles.closeBtn}>
+              &times;
+            </div>
+            </div>
+            <ul className={styles.mobileNavLinks}>
+            {navLinksData.map((elem)=>{
+              return(
+                <li key={elem.id}  className={styles.mobileNavLi}>
+                  <Link onClick={handleClick} className={pathName === elem.path ? styles.mainRedText : ""} href={elem.path}>{elem.name}</Link> </li>
+              )
+            })}
+            </ul>
+          </div>
         </div>
       </div>
       </nav>
