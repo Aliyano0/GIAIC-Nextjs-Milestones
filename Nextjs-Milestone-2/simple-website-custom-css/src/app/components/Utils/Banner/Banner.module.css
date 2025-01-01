@@ -1,6 +1,5 @@
 .banner {
    background-image: linear-gradient(to right, #f8f6f4 30%, transparent);
-    background-position: 0 0, 50% 59%;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
     padding: 120px 0;
@@ -37,6 +36,12 @@
   font-weight: 500;
   line-height: 24px;
   color: var(--main-gray);
+}
+@media screen and (max-width: 1200px) {
+  .banner{
+    width: 100%;
+  }
+ 
 }
 
 @media screen and (max-width: 1024px) {

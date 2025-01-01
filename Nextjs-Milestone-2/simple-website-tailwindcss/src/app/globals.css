@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root{
+  --navLiColor: #636563;
+  --main-red: #ac1313;
+  --main-gray: #6C6C6C;
+  --subtitle: rgb(215, 116, 116);
+  --inputIcon: rgb(108, 108, 108,0.3);
+  --inputBorder: rgb(108, 108, 108,0.2);
+}
+.libre-franklin{
+  font-family: var(--font-libre-franklin);
+}
+.playfair-display{
+  font-family: var(--font-playfair-display);
+}
+.poppins{
+  font-family: var(--font-poppins);
+}
+.pacifico{
+  font-family: var(--font-pacifico);
+}
+body {
+  font-family: var(--font-poppins);
+  overflow-x: hidden;
+}

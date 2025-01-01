@@ -1,0 +1,25 @@
+.verticalHeading{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg) translate(0, -50%);
+    color: rgb(219, 219, 219);
+}
+.verticalHeadingLeft{
+    left: 0;
+    right: auto;
+}
+.verticalHeadingRight{
+    right: 0;
+    left: auto;
+}
+@media screen and (max-width: 1400px){
+    .verticalHeading{display:none;
+    }
+}
