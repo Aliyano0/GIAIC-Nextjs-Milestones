@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image';
-import styles from './categoryCircle.module.css'
 
 interface CategoryCircleProps {
   bgColor: string;

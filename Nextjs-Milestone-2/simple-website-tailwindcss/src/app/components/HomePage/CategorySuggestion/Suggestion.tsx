@@ -1,4 +1,4 @@
-import styles from "./categorySuggestion.module.css";
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
