@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PiShoppingCart } from "react-icons/pi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const navLinksData = [
   {
@@ -29,6 +30,10 @@ const navLinksData = [
 
 const Navbar = () => {
   const pathName = usePathname();
+  const [showNav, setShowNav] = useState(false);
+  const handleClick = () => {
+    setShowNav(!showNav);
+  }
   return (
     <header className="header w-full h-[90px] sticky top-0 bg-white border-b-[1px] border-b-[#ebebeb] flex justify-center items-center p-0 lg991:px-5 z-40">
 
@@ -53,8 +58,25 @@ const Navbar = () => {
           <PiShoppingCart className="cartIcon text-[22px] xxs:text-[26px]"/>
           Cart
         </div>
-        <div className="hamburger flex items-center justify-center p-[18px] cursor-pointer text-[27px] xxs:text-3xl text-black lg991:hidden">
+        <div onClick={handleClick} className="hamburger flex items-center justify-center p-[18px] cursor-pointer text-[27px] xxs:text-3xl text-black lg991:hidden">
           <GiHamburgerMenu />
+        </div>
+        <div className={`mobileNav ${showNav ? "block opacity-100" : "opacity-0 hidden"} bg-black transition-all duration-[0.4s] delay-100 absolute top-0 left-0 w-full h-screen lg991:hidden`}>
+            <div className="mobileNavHeader w-full p-[20px]">
+            <div className="closeBtnContainer w-full text-right px-4 xs:px-7">
+            <div onClick={handleClick} className="closeBtn inline-block text-white text-[32px] xxs:text-[40px] cursor-pointer">
+              &times;
+            </div>
+            </div>
+            <ul className="mobileNavLinks mt-10 w-full text-center flex flex-col items-center justify-center gap-[20px]">
+            {navLinksData.map((elem)=>{
+              return(
+                <li key={elem.id}  className="navli text-xs xs:text-sm font-medium py-[21px] px-5 leading-[22px] text-white tracking-[2px] hover:text-main-red">
+                  <Link onClick={handleClick} className={pathName === elem.path ? "text-main-red" : ""} href={elem.path}>{elem.name}</Link> </li>
+              )
+            })}
+            </ul>
+          </div>
         </div>
       </div>
       </nav>
