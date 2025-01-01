@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="logo pacifico pl-[14px] lg991:pl-0">
         <Link href={"/"}>
 
-        <h3 className="text-4xl text-black">Pompeo</h3>
+        <h3 className="text-4xl font-bold text-black">Pompeo</h3>
         </Link>
         </div>
       <div className="navbtns flex items-center">
