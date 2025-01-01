@@ -24,7 +24,7 @@ const Banner = ({ heading, bgImg, shopPage = false, contactPage = false, aboutUs
             {heading}
           </h1>
           <p className="Description w-full xs:w-[70%] md:w-full lg:w-[90%]  font-['Libre_Franklin'] text-[14px] font-medium leading-[24px] text-main-gray">
-            The attractions of ceramics lie partly in its contradictions. It is both difficult and easy, with an element beyond our control. It is both extremely fragile and durable. Like 'Sumi' ink painting, it does not lend itself to erasures and indecision.
+            The attractions of ceramics lie partly in its contradictions. It is both difficult and easy, with an element beyond our control. It is both extremely fragile and durable. Like &apos;Sumi&apos; ink painting, it does not lend itself to erasures and indecision.
           </p>
         </div>
       </div>
