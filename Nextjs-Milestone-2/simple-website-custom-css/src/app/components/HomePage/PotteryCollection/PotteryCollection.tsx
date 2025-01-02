@@ -1,9 +1,11 @@
+import { Linden_Hill } from "next/font/google";
 import ContainerHeadings from "../../Utils/ContainerHeadings/ContainerHeadings";
 import ProductCard from "../../Utils/ProductCard/ProductCard";
 import RedButton from "../../Utils/RedButton/RedButton";
 import VerticalText from "../../Utils/VerticalText/VerticalText";
 import styles from "./PotteryCollection.module.css";
 import {productData }from "./productData";
+import Link from "next/link";
 
 const PotteryCollection = () => {
   return (
@@ -24,7 +26,9 @@ const PotteryCollection = () => {
           }
         </div>
         <div className={styles.btnContainer}>
+          <Link href="/shop">
           <RedButton btnText="View All Products" />
+          </Link>
         </div>
       </div>
       
