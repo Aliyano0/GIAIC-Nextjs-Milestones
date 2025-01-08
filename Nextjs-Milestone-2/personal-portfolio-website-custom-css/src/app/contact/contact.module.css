@@ -1,0 +1,152 @@
+.mainContainer {
+  width: 100%;
+}
+.section {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: var(--font-dmSerifDisplay);
+}
+.formContainer {
+  font-family: var(--font-roboto);
+  width: 100%;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-roboto);
+}
+.formHeading {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.inputsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.labels {
+  width: 62%;
+}
+.inputs {
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  width: 100%;
+  padding: 8px 4px;
+  font-family: var(--font-roboto);
+  border-bottom: 1px solid gray;
+}
+.inputs::placeholder {
+  color: var(--main-para);
+}
+.textArea {
+  font-family: var(--font-roboto);
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  width: 100%;
+  padding: 0 4px;
+  border-bottom: 1px solid gray;
+}
+.textArea::placeholder {
+  color: var(--main-para);
+}
+.btnContainer {
+  margin-top: 40px;
+}
+
+/* xs Screens */
+@media (min-width: 480px) {
+  .section {
+    padding-top: 70px;
+  }
+  .heading {
+    font-size: 90px;
+  }
+  .formHeading {
+    font-size: 28px;
+  }
+  .inputsContainer {
+    gap: 16px;
+  }
+  .inputs,
+  .textArea {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* sm Screens */
+@media (min-width: 640px) {
+  .section {
+    display: block;
+    padding-left: 30px;
+  }
+  .heading {
+    font-size: 110px;
+  }
+  .formContainer {
+    padding-left: 20px;
+    width: auto;
+  }
+  .form {
+    display: block;
+    width: auto;
+  }
+  .inputsContainer {
+    width: auto;
+    justify-content: baseline;
+    align-items: start;
+  }
+  .labels {
+    width: 55%;
+  }
+}
+
+/* md Screens */
+@media (min-width: 768px) {
+  .section {
+    padding-left: 60px;
+  }
+  .heading {
+    font-size: 140px;
+  }
+  .labels {
+    width: 48.5%;
+  }
+}
+
+/* lg Screens */
+@media (min-width: 1024px) {
+  .section {
+    padding-left: 90px;
+  }
+  .heading {
+    font-size: 170px;
+  }
+  .labels {
+    width: 40%;
+  }
+}
+/* xl Screens */
+@media (min-width: 1280px) {
+  .labels {
+    width: 33.3333%;
+  }
+}

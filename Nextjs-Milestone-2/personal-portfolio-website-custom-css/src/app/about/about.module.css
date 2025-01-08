@@ -1,0 +1,187 @@
+.homeContainer {
+  width: 100%;
+  height: 100%;
+}
+.section {
+  width: 100%;
+  padding-top: 48px;
+  margin-bottom: 80px;
+}
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.headingsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.headings {
+  font-family: var(--font-dmSerifDisplay);
+  font-size: 90px;
+  line-height: 90px;
+  color: var(--main-text);
+}
+.headingOne {
+  display: inline-block;
+}
+.headingTwoContainer {
+  display: flex;
+}
+.headingImg {
+  margin-top: -17px;
+  margin-left: -20px;
+  transform: rotate(21deg);
+  width: 130px;
+  height: 130px;
+}
+.paraContainer {
+  width: 85%;
+}
+.para {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-family: var(--font-roboto);
+  color: var(--main-para);
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+/* xs Screens */
+@media (min-width: 480px) {
+  .section {
+    padding-top: 80px;
+  }
+  .textContainer {
+    gap: 36px;
+  }
+
+  .headings {
+    font-size: 110px;
+    line-height: 120px;
+  }
+  .headingImg {
+    height: 170px;
+    width: 170px;
+    margin-top: -22px;
+    margin-left: -30px;
+  }
+  .paraContainer {
+    width: 80%;
+  }
+}
+
+/* sm Screens */
+@media (min-width: 640px) {
+  .section {
+    padding-top: 120px;
+  }
+  .textContainer {
+    gap: 56px;
+  }
+
+  .headings {
+    font-size: 150px;
+    line-height: 135px;
+  }
+  .headingImg {
+    height: 200px;
+    width: 200px;
+    margin-top: -30px;
+    margin-left: -40px;
+  }
+  .paraContainer {
+    width: 74%;
+  }
+  .para {
+    font-size: 16px;
+  }
+  .btnContainer {
+    margin-top: 80px;
+  }
+}
+/* md Screens */
+@media (min-width: 768px) {
+  .headings {
+    font-size: 190px;
+    line-height: 170px;
+  }
+  .headingTwoContainer {
+    margin-top: 24px;
+  }
+  .headingImg {
+    height: 250px;
+    width: 250px;
+    margin-top: -32px;
+  }
+  .para {
+    font-size: 17px;
+    line-height: 36px;
+  }
+}
+
+/* lg Screens */
+@media (min-width: 1024px) {
+  .headings {
+    font-family: var(--font-dmSerifDisplay);
+    font-size: 220px;
+    line-height: 170px;
+    color: var(--main-text);
+  }
+  .paraContainer {
+    width: 69%;
+  }
+  .para {
+    font-size: 19px;
+  }
+}
+
+/* xl Screens */
+
+@media (min-width: 1280px) {
+  .section {
+    padding-left: 72px;
+  }
+  .textContainer {
+    justify-content: baseline;
+    flex-direction: row;
+  }
+
+  .headingsContainer {
+    width: 45%;
+    display: block;
+  }
+  .headings {
+    font-size: 180px;
+    line-height: 170px;
+  }
+  .paraContainer {
+    width: 48%;
+  }
+}
+/* 2xl Screens*/
+
+@media (min-width: 1536px) {
+  .headingsContainer {
+    padding-left: 16px;
+  }
+  .headings {
+    font-size: 210px;
+    line-height: 170px;
+  }
+  .para {
+    font-size: 20px;
+  }
+}

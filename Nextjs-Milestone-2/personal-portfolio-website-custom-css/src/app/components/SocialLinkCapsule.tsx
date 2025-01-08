@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./socialLinkCapsule.module.css";
 import Link from "next/link";
 import {
   FaLinkedinIn,
@@ -10,39 +11,39 @@ import { CiMail } from "react-icons/ci";
 
 const SocialLinkCapsule = () => {
   return (
-    <div className="socialLinks inline-flex items-center px-3 py-2 xs:px-4 xs:py-3 rounded-[64px] border-[1px] border-main-text text-[22px] gap-[10px] xs:text-[26px] sm:text-[30px] md:text-[34px] text-white xs:gap-4 fixed z-50 right-3 bottom-[14px] xs:right-5 xs:bottom-3 sm:right-7 sm:bottom-5 md:right-10 md:bottom-7 ">
+    <div className={styles.linksContainer}>
       <Link
         href={"https://www.linkedin.com/in/aliyano0"}
         target="_blank"
-        className="hover:shadow-md hover:shadow-main-text transition-all duration-300"
+        className={styles.socialLinkTag}
       >
         <FaLinkedinIn />
       </Link>
       <Link
         href={"mailto:aliyanaqeel97@gmail.com?subject=Hello"}
         target="_blank"
-        className="hover:shadow-md hover:shadow-main-text transition-all duration-300"
+        className={styles.socialLinkTag}
       >
         <CiMail />
       </Link>
       <Link
         href={"https://x.com/Aliyan_o0"}
         target="_blank"
-        className="hover:shadow-md hover:shadow-main-text transition-all duration-300"
+        className={styles.socialLinkTag}
       >
         <FaXTwitter />
       </Link>
       <Link
         href={"https://www.instagram.com/aliyan.o0/"}
         target="_blank"
-        className="hover:shadow-md hover:shadow-main-text transition-all duration-300"
+        className={styles.socialLinkTag}
       >
         <FaInstagram />
       </Link>
       <Link
         href={"https://github.com/Aliyano0"}
         target="_blank"
-        className="hover:shadow-md hover:shadow-main-text transition-all duration-300"
+        className={styles.socialLinkTag}
       >
         <FaGithub />
       </Link>
